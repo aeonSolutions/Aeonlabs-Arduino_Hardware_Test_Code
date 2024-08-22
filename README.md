@@ -20,8 +20,8 @@ Last update: 22-08-2024
 # [![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-arduino_hardware_test_code/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-arduino_hardware_test_code) Hardware Test Code
 Arduino .ino code to test more than 30 components and functionalities of the hardware electronics I prototype (design, fabricate, and test).  Make sure to also view my [Main Open Hardware Electronics repository](https://github.com/aeonSolutions/PCB-Prototyping-Catalogue/blob/main/README.md).
 
-- ADS1115 IC ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DmwODgF) )
-- ADS1252 IC ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DFbxvR1) )
+- ADS1115 IC ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DmwODgF) ) ( []Datasheet]() )
+- ADS1252 IC ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DFbxvR1) ) ( []Datasheet]() )
 - BLE_UART 
 - LED Blick
 - Blink_aeon
@@ -30,27 +30,27 @@ Arduino .ino code to test more than 30 components and functionalities of the har
 - simple_blink_led
 - ESP32 Storage Test
 - Flash Diagnostics
-- KTS1620 IC ( [buy on AliExpress](https://mou.sr/4fUZBdm) )
-- SHT31 Demo Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DEaWTZ5) )
-- SHT31 Test Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DEaWTZ5) )
-- Simple Accelerometer ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DFAbgXV) )
+- KTS1620 IC ( [buy on AliExpress](https://mou.sr/4fUZBdm) ) ( []Datasheet]() )
+- SHT31 Demo Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DEaWTZ5) ) ( []Datasheet]() )
+- SHT31 Test Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DEaWTZ5) ) ( []Datasheet]() )
+- Simple Accelerometer ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DFAbgXV) ) ( []Datasheet]() )
 - Soil Moisture Sensor
-- TEMT6000 Luminosity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DBSn9qf) )
+- TEMT6000 Luminosity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DBSn9qf) ) ( []Datasheet]() )
 - WiFi Client
 - WiFi Scan
 - Wire Scan
-- AHT20 Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DdYgcNZ) )
+- AHT20 Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DdYgcNZ) ) ( []Datasheet]() )
 - APRS CWOP Test
-- ATSHA204 IC Test ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DcYgkRl) )
-- BMP280 Atmospheric Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DnnmGCR) )
+- ATSHA204 IC Test ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DcYgkRl) ) ( []Datasheet]() )
+- BMP280 Atmospheric Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DnnmGCR) ) ( []Datasheet]() )
 - Buzzer Test
-- DS18b20 Temperature Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DmavAFV) )
-- ENS160 TVOC CO2 Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DDAxLXv) )
+- DS18b20 Temperature Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DmavAFV) ) ( []Datasheet]() )
+- ENS160 TVOC CO2 Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DDAxLXv) ) ( []Datasheet]() )
 - I2C Scan
 - mserial_comm (Aeonlabs C++ base class libraries )
 - Serial UART Communication Test
-- ST7789 Display ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DkDmYjV) )
-- VL6180x Laser Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DD2AEur) )
+- ST7789 Display ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DkDmYjV) ) ( []Datasheet]() )
+- VL6180x Laser Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DD2AEur) ) ( []Datasheet]() )
 
 <br>
 
