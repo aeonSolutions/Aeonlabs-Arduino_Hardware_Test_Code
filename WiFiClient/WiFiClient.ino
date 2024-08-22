@@ -17,13 +17,13 @@
 #include <WiFi.h>
 
 const char* ssid     = "TheScientist"; // Change this to your WiFi SSID
-const char* password = "migalhas"; // Change this to your WiFi password
+const char* password = ""; // Change this to your WiFi password
 
 const char* host = "api.thingspeak.com"; // This should not be changed
 const int httpPort = 80; // This should not be changed
-const String channelID   = "2005329"; // Change this to your channel ID
-const String writeApiKey = "V6YOTILH9I7D51F9"; // Change this to your Write API key
-const String readApiKey = "34W6LGLIFXD56MPM"; // Change this to your Read API key
+const String channelID   = ""; // Change this to your channel ID
+const String writeApiKey = ""; // Change this to your Write API key
+const String readApiKey = ""; // Change this to your Read API key
 
 // The default example accepts one data filed named "field1"
 // For your own server you can ofcourse create more of them.
