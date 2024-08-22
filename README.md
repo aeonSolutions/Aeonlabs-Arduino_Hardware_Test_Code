@@ -20,7 +20,7 @@ Last update: 22-08-2024
 </p>
 
 # Hardware Test Code
-Arduino .ino code to test more than 30 components and functionalities of the hardware electronics I prototype (design, fabricate, and test). 
+Arduino .ino code to test more than 30 components and functionalities of the hardware electronics I prototype (design, fabricate, and test).  Make sure to also view my [Main Open Hardware Electronics repository](https://github.com/aeonSolutions/PCB-Prototyping-Catalogue/blob/main/README.md).
 
 
 
