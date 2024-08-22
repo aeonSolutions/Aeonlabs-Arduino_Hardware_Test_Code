@@ -20,6 +20,38 @@ Last update: 22-08-2024
 # [![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-arduino_hardware_test_code/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-arduino_hardware_test_code) Hardware Test Code
 Arduino .ino code to test more than 30 components and functionalities of the hardware electronics I prototype (design, fabricate, and test).  Make sure to also view my [Main Open Hardware Electronics repository](https://github.com/aeonSolutions/PCB-Prototyping-Catalogue/blob/main/README.md).
 
+- ADS1115 IC
+- ADS1252 IC
+- BLE_UART 
+- LED Blick
+- Blink_aeon
+- Blink_random
+- blink_pwm_led
+- simple_blink_led
+- ESP32 Storage Test
+- Flash Diagnostics
+- KTS1620 IC
+- SHT31 Demo Temperature & Humidity Sensor
+- SHT31 Test Temperature & Humidity Sensor
+- Simple Accelerometer
+- Soil Moisture Sensor
+- TEMT6000 Luminosity Sensor
+- WiFi Client
+- WiFi Scan
+- Wire Scan
+- AHT20 Temperature & Humidity Sensor
+- APRS CWOP Test
+- ATSHA204 IC Test
+- BMP280 Atmospheric Sensor
+- Buzzer Test
+- DS18b20 Temperature Sensor
+- ENS160 TVOC CO2 Sensor
+- I2C Scan
+- mserial_comm (Aeonlabs C++ base class libraries )
+- Serial UART Communication Test
+- ST7789 Display
+- VL6180x Laser Sensor
+
 <br>
 
 #### [![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-esp32-c-base-firmware-libraries/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-esp32-c-base-firmware-libraries) [ESP32 C++ Base Firmware Libraries](https://github.com/aeonSolutions/aeonlabs-ESP32-C-Base-Firmware-Libraries#readme)
