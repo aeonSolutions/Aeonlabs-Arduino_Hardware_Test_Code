@@ -1,2 +1,2 @@
-# Aeonlabs-Arduino_Hardware_Test_Code
+# Hardware Test Code
 Arduino .ino code to test hardware electronics 
