@@ -20,8 +20,18 @@ Last update: 22-08-2024
 # Hardware Test Code
 Arduino .ino code to test more than 30 components and functionalities of the hardware electronics I prototype (design, fabricate, and test).  Make sure to also view my [Main Open Hardware Electronics repository](https://github.com/aeonSolutions/PCB-Prototyping-Catalogue/blob/main/README.md).
 
+<br>
 
+#### [![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-esp32-c-base-firmware-libraries/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-esp32-c-base-firmware-libraries) [ESP32 C++ Base Firmware Libraries](https://github.com/aeonSolutions/aeonlabs-ESP32-C-Base-Firmware-Libraries#readme)
+ Some of the test code .ino files use my C++ class libraries I maintain to speed up firmware code development on all my ESP32 PCB electronics. It uses [FreeRTOS](https://www.freertos.org) in particular for dual core programming. 
 
+<p align="center">
+ <a href="https://www.youtube.com/watch?v=jQgjHQrOK7o">
+   <img src="https://github.com/aeonSolutions/aeonlabs-open-software-catalogue/blob/main/media/firmware_upload.jpg" width="350">
+ </a><br>
+ First Firmware download of AeonLabs's USB to UART TTL Burner (YouTube)
+  </p>
+  
 <br>
 
 **Get a Notification on every PCB update**
