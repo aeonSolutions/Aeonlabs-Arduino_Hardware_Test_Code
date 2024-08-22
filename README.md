@@ -33,7 +33,7 @@ Arduino .ino code to test more than 30 components and functionalities of the har
 - KTS1620 IC ( [buy on AliExpress](https://mou.sr/4fUZBdm) )
 - SHT31 Demo Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DEaWTZ5) )
 - SHT31 Test Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DEaWTZ5) )
-- Simple Accelerometer ( [buy on AliExpress]() )
+- Simple Accelerometer ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DFAbgXV) )
 - Soil Moisture Sensor
 - TEMT6000 Luminosity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DBSn9qf) )
 - WiFi Client
@@ -41,16 +41,16 @@ Arduino .ino code to test more than 30 components and functionalities of the har
 - Wire Scan
 - AHT20 Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DdYgcNZ) )
 - APRS CWOP Test
-- ATSHA204 IC Test ( [buy on AliExpress]() )
-- BMP280 Atmospheric Sensor ( [buy on AliExpress]() )
+- ATSHA204 IC Test ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DcYgkRl) )
+- BMP280 Atmospheric Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DnnmGCR) )
 - Buzzer Test
-- DS18b20 Temperature Sensor ( [buy on AliExpress]() )
-- ENS160 TVOC CO2 Sensor ( [buy on AliExpress]() )
+- DS18b20 Temperature Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DmavAFV) )
+- ENS160 TVOC CO2 Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DDAxLXv) )
 - I2C Scan
 - mserial_comm (Aeonlabs C++ base class libraries )
 - Serial UART Communication Test
-- ST7789 Display ( [buy on AliExpress]() )
-- VL6180x Laser Sensor ( [buy on AliExpress]() )
+- ST7789 Display ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DkDmYjV) )
+- VL6180x Laser Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DD2AEur) )
 
 <br>
 
