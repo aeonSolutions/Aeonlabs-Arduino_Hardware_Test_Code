@@ -15,7 +15,7 @@
  
 <p align="right">
    <img height="25" src="https://github.com/aeonSolutions/aeonSolutions/blob/main/media/language-icon.png"> 
- <a href="https://github-com.translate.goog/aeonSolutions/aeonlabs-open-software-catalogue?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=en&_x_tr_pto=wapp">Change Language</a> <br>
+ <a href="https://github-com.translate.goog/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code?_x_tr_sl=en&_x_tr_tl=nl&_x_tr_hl=en&_x_tr_pto=wapp">Change Language</a> <br>
 Last update: 22-08-2024
 </p>
 
