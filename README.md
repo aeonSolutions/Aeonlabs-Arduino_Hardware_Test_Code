@@ -41,16 +41,16 @@ Arduino .ino code to test more than 30 components and functionalities of the har
 - Wire Scan
 - AHT20 Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DdYgcNZ) ) ( [Datasheet](https://cdn.sparkfun.com/assets/d/2/b/e/d/AHT20.pdf) )
 - APRS CWOP Test
-- ATSHA204 IC Test ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DcYgkRl) ) ( []Datasheet]() )
-- BMP280 Atmospheric Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DnnmGCR) ) ( [Datasheet]() )
+- ATSHA204 IC Test ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DcYgkRl) ) ( [Datasheet](https://ww1.microchip.com/downloads/en/devicedoc/Atmel-8740-CryptoAuth-ATSHA204-Datasheet.pdf) )
+- BMP280 Atmospheric Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DnnmGCR) ) ( [Datasheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/product_flyer/bst-bmp280-fl000.pdf) )
 - Buzzer Test
-- DS18b20 Temperature Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DmavAFV) ) ( [Datasheet]() )
-- ENS160 TVOC CO2 Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DDAxLXv) ) ( [Datasheet]() )
+- DS18b20 Temperature Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DmavAFV) ) ( [Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf)) )
+- ENS160 TVOC CO2 Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DDAxLXv) ) ( [Datasheet](https://www.sciosense.com/wp-content/uploads/2023/12/ENS160-Dashboard-Quick-Start-Guide.pdf) )
 - I2C Scan
 - mserial_comm (Aeonlabs C++ base class libraries )
 - Serial UART Communication Test
-- ST7789 Display ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DkDmYjV) ) ( [Datasheet]() )
-- VL6180x Laser Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DD2AEur) ) ( [Datasheet]() )
+- ST7789 Display ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DkDmYjV) ) ( [Datasheet](https://www.waveshare.com/w/upload/a/ae/ST7789_Datasheet.pdf) )
+- VL6180x Laser Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DD2AEur) ) ( [Datasheet](https://www.st.com/resource/en/datasheet/vl6180x.pdf) )
 
 <br>
 
