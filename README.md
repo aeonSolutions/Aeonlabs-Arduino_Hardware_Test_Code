@@ -17,7 +17,7 @@
 Last update: 22-08-2024
 </p>
 
-# Hardware Test Code
+# [![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-arduino_hardware_test_code/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-arduino_hardware_test_code) Hardware Test Code
 Arduino .ino code to test more than 30 components and functionalities of the hardware electronics I prototype (design, fabricate, and test).  Make sure to also view my [Main Open Hardware Electronics repository](https://github.com/aeonSolutions/PCB-Prototyping-Catalogue/blob/main/README.md).
 
 <br>
