@@ -23,7 +23,7 @@ Arduino .ino code to test more than 30 components and functionalities of the har
 <br>
 
 #### [![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-esp32-c-base-firmware-libraries/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-esp32-c-base-firmware-libraries) [ESP32 C++ Base Firmware Libraries](https://github.com/aeonSolutions/aeonlabs-ESP32-C-Base-Firmware-Libraries#readme)
- Some of the test code .ino files use my C++ class libraries I maintain to speed up firmware code development on all my ESP32 PCB electronics. It uses [FreeRTOS](https://www.freertos.org) in particular for dual core programming. 
+ Some of the test code .ino files available on this repository use the C++ class libraries I maintain to speed up firmware code development on all my ESP32 PCB electronics. It uses [FreeRTOS](https://www.freertos.org) in particular for dual core programming. 
 
 <p align="center">
  <a href="https://www.youtube.com/watch?v=jQgjHQrOK7o">
