@@ -5,9 +5,7 @@
 </a>
 [<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" data-canonical-src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="30" />](https://www.buymeacoffee.com/migueltomas)
 ![](https://img.shields.io/github/last-commit/aeonSolutions/aeonlabs-open-software-catalogue?style=for-the-badge)
-<a href="https://trackgit.com">
-<img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/lgeu3mh7autbw0q1rjhl" alt="trackgit-views" />
-</a>
+<img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/m054utqmhdrb4aztkb5m" alt="trackgit-views" />
 ![](https://views.whatilearened.today/views/github/aeonSolutions/aeonlabs-open-software-catalogue.svg)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#)
 
