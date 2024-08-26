@@ -14,44 +14,57 @@
 <p align="right">
    <img height="25" src="https://github.com/aeonSolutions/aeonSolutions/blob/main/media/language-icon.png"> 
  <a href="https://github-com.translate.goog/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code?_x_tr_sl=en&_x_tr_tl=nl&_x_tr_hl=en&_x_tr_pto=wapp">Change Language</a> <br>
-Last update: 22-08-2024 <br>
+Last update: 26-08-2024 <br>
 <sub> <a href="https://www.rapidtables.com/convert/number/hex-to-binary.html?x=64">HEX to Bin Conveter</a> </sub>
 </p>
 
 # [![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-arduino_hardware_test_code/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-arduino_hardware_test_code) Hardware Test Code
 Arduino .ino code to test more than 30 components and functionalities of the hardware electronics I prototype (design, fabricate, and test).  Make sure to also view my [Main Open Hardware Electronics repository](https://github.com/aeonSolutions/PCB-Prototyping-Catalogue/blob/main/README.md).
 
+#### Connect to an API
+- [GitHub API - Test file upload](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/github_api_test_upload)
+- [APRS API -  CWOP Test](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/aprs_cwop_test)
+  
+#### IC Libraries
 - ADS1115 IC ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DmwODgF) ) ( [Datasheet](https://www.ti.com/lit/ds/symlink/ads1113.pdf?ts=1724249370001&ref_url=https%253A%252F%252Fwww.google.com%252F) )
 - ADS1252 IC ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DFbxvR1) ) ( [Datasheet](https://www.ti.com/lit/ds/symlink/ads1252.pdf) )
-- BLE_UART 
+- ESP32 Storage Test
+- Flash Diagnostics
+- KTS1620 IC ( [buy on AliExpress](https://mou.sr/4fUZBdm) ) ( [Datasheet](https://www.kinet-ic.com/uploads/KTS1620-04a_Datasheet_Full.pdf) )
+- ATSHA204 IC Test ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DcYgkRl) ) ( [Datasheet](https://ww1.microchip.com/downloads/en/devicedoc/Atmel-8740-CryptoAuth-ATSHA204-Datasheet.pdf) )
+
+#### Sound
+- Buzzer Test
+  
+#### LEDs
 - LED Blick
 - Blink_aeon
 - Blink_random
 - blink_pwm_led
 - simple_blink_led
-- ESP32 Storage Test
-- Flash Diagnostics
-- KTS1620 IC ( [buy on AliExpress](https://mou.sr/4fUZBdm) ) ( [Datasheet](https://www.kinet-ic.com/uploads/KTS1620-04a_Datasheet_Full.pdf) )
-- SHT31 Demo Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DEaWTZ5) ) ( [Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf) )
-- SHT31 Test Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DEaWTZ5) ) ( [Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf) )
-- LSM6DS3 Accelerometer ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DFAbgXV) ) ( [Datasheet](https://www.st.com/resource/en/datasheet/lsm6ds3tr-c.pdf) )
-- Soil Moisture Sensor
-- TEMT6000 Luminosity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DBSn9qf) ) ( [Datasheet](https://www.vishay.com/docs/81579/temt6000.pdf) )
-- WiFi Client
-- WiFi Scan
-- Wire Scan
-- AHT20 Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DdYgcNZ) ) ( [Datasheet](https://cdn.sparkfun.com/assets/d/2/b/e/d/AHT20.pdf) )
-- APRS CWOP Test
-- ATSHA204 IC Test ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DcYgkRl) ) ( [Datasheet](https://ww1.microchip.com/downloads/en/devicedoc/Atmel-8740-CryptoAuth-ATSHA204-Datasheet.pdf) )
-- BMP280 Atmospheric Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DnnmGCR) ) ( [Datasheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/product_flyer/bst-bmp280-fl000.pdf) )
-- Buzzer Test
-- DS18b20 Temperature Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DmavAFV) ) ( [Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf)) )
-- ENS160 TVOC CO2 Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DDAxLXv) ) ( [Datasheet](https://www.sciosense.com/wp-content/uploads/2023/12/ENS160-Dashboard-Quick-Start-Guide.pdf) )
+
+#### Communications
 - I2C Scan
 - mserial_comm (Aeonlabs C++ base class libraries )
 - Serial UART Communication Test
+- Wire Scan
+- WiFi Scan
+- WiFi Client
+- BLE_UART 
+
+#### LCD Displays
 - ST7789 Display ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DkDmYjV) ) ( [Datasheet](https://www.waveshare.com/w/upload/a/ae/ST7789_Datasheet.pdf) )
+#### Sensors
 - VL6180x Laser Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DD2AEur) ) ( [Datasheet](https://www.st.com/resource/en/datasheet/vl6180x.pdf) )
+- DS18b20 Temperature Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DmavAFV) ) ( [Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf)) )
+- ENS160 TVOC CO2 Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DDAxLXv) ) ( [Datasheet](https://www.sciosense.com/wp-content/uploads/2023/12/ENS160-Dashboard-Quick-Start-Guide.pdf) )
+- BMP280 Atmospheric Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DnnmGCR) ) ( [Datasheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/product_flyer/bst-bmp280-fl000.pdf) )
+- LSM6DS3 Accelerometer ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DFAbgXV) ) ( [Datasheet](https://www.st.com/resource/en/datasheet/lsm6ds3tr-c.pdf) )
+- Soil Moisture Sensor
+- TEMT6000 Luminosity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DBSn9qf) ) ( [Datasheet](https://www.vishay.com/docs/81579/temt6000.pdf) )
+- AHT20 Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DdYgcNZ) ) ( [Datasheet](https://cdn.sparkfun.com/assets/d/2/b/e/d/AHT20.pdf) )
+- SHT31 Demo Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DEaWTZ5) ) ( [Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf) )
+- SHT31 Test Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DEaWTZ5) ) ( [Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf) )
 
 <br>
 
