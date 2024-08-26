@@ -1,3 +1,23 @@
+[![](https://dcbadge.vercel.app/api/server/hw3j3RwfJf) ](https://discord.gg/hw3j3RwfJf)
+ [![Donate](https://img.shields.io/badge/donate-$-brown.svg?style=for-the-badge)](http://paypal.me/mtpsilva)
+<a href="https://github.com/sponsors/aeonSolutions">
+   <img height="40" src="https://github.com/aeonSolutions/PCB-Prototyping-Catalogue/blob/main/media/become_a_github_sponsor.png">
+</a>
+[<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" data-canonical-src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="30" />](https://www.buymeacoffee.com/migueltomas)
+![](https://img.shields.io/github/last-commit/aeonSolutions/aeonlabs-open-software-catalogue?style=for-the-badge)
+<img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/m054utqmhdrb4aztkb5m" alt="trackgit-views" />
+![](https://views.whatilearened.today/views/github/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code.svg)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#)
+
+ **Navigation** | [AeonLabs Main Index](https://github.com/aeonSolutions/aeonSolutions/blob/main/aeonSolutions-Main-Index.md)  >> [Open Source Code Software](https://github.com/aeonSolutions/aeonlabs-open-software-catalogue)  >>   Hardware Test Code  >>  Dataverse API - Test File Upload
+ 
+<p align="right">
+   <img height="25" src="https://github.com/aeonSolutions/aeonSolutions/blob/main/media/language-icon.png"> 
+ <a href="https://github-com.translate.goog/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code?_x_tr_sl=en&_x_tr_tl=nl&_x_tr_hl=en&_x_tr_pto=wapp">Change Language</a> <br>
+Last update: 26-08-2024 <br>
+<sub> <a href="https://www.rapidtables.com/convert/number/hex-to-binary.html?x=64">HEX to Bin Conveter</a> </sub>
+</p>
+
 To upload a file to a **Dataverse** repository using an Arduino device, we'll need to make HTTP requests to the Dataverse API. Dataverse provides an API that supports the ingestion of files into datasets, which we'll use to perform the upload.
 
 Since Arduino devices like the ESP8266 or ESP32 are capable of connecting to the internet and making HTTP requests, we'll base this example on using an **ESP32** or **ESP8266** with WiFi connectivity.
