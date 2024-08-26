@@ -24,7 +24,8 @@ Arduino .ino code to test more than 30 components and functionalities of the har
 #### Connect to an API
 - [GitHub API - Test file upload](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/github_api_test_upload)
 - [APRS API -  CWOP Test](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/aprs_cwop_test)
-  
+- [Dataverse API - Test file upload](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/dataverse_api_test_upload)
+    
 #### IC Libraries
 - ADS1115 IC ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DmwODgF) ) ( [Datasheet](https://www.ti.com/lit/ds/symlink/ads1113.pdf?ts=1724249370001&ref_url=https%253A%252F%252Fwww.google.com%252F) )
 - ADS1252 IC ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DFbxvR1) ) ( [Datasheet](https://www.ti.com/lit/ds/symlink/ads1252.pdf) )
