@@ -14,7 +14,7 @@
 <p align="right">
    <img height="25" src="https://github.com/aeonSolutions/aeonSolutions/blob/main/media/language-icon.png"> 
  <a href="https://github-com.translate.goog/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code?_x_tr_sl=en&_x_tr_tl=nl&_x_tr_hl=en&_x_tr_pto=wapp">Change Language</a> <br>
-Last update: 22-08-2024 <br>
+Last update: 26-08-2024 <br>
 <sub> <a href="https://www.rapidtables.com/convert/number/hex-to-binary.html?x=64">HEX to Bin Conveter</a> </sub>
 </p>
 
@@ -64,7 +64,7 @@ Arduino .ino code to test more than 30 components and functionalities of the har
 
 #### Connect to an API
 - [GitHub API - Test file upload](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/github_api_test_upload)
-- APRS CWOP Test
+- [APRS CWOP Test](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/aprs_cwop_test)
 
 
 <br>
