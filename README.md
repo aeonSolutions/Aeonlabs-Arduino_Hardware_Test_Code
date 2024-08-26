@@ -21,6 +21,10 @@ Last update: 26-08-2024 <br>
 # [![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-arduino_hardware_test_code/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-arduino_hardware_test_code) Hardware Test Code
 Arduino .ino code to test more than 30 components and functionalities of the hardware electronics I prototype (design, fabricate, and test).  Make sure to also view my [Main Open Hardware Electronics repository](https://github.com/aeonSolutions/PCB-Prototyping-Catalogue/blob/main/README.md).
 
+#### Connect to an API
+- [GitHub API - Test file upload](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/github_api_test_upload)
+- [APRS CWOP Test](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/aprs_cwop_test)
+  
 #### IC Libraries
 - ADS1115 IC ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DmwODgF) ) ( [Datasheet](https://www.ti.com/lit/ds/symlink/ads1113.pdf?ts=1724249370001&ref_url=https%253A%252F%252Fwww.google.com%252F) )
 - ADS1252 IC ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DFbxvR1) ) ( [Datasheet](https://www.ti.com/lit/ds/symlink/ads1252.pdf) )
@@ -31,7 +35,7 @@ Arduino .ino code to test more than 30 components and functionalities of the har
 
 #### Sound
 - Buzzer Test
-
+  
 #### LEDs
 - LED Blick
 - Blink_aeon
@@ -61,11 +65,6 @@ Arduino .ino code to test more than 30 components and functionalities of the har
 - AHT20 Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DdYgcNZ) ) ( [Datasheet](https://cdn.sparkfun.com/assets/d/2/b/e/d/AHT20.pdf) )
 - SHT31 Demo Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DEaWTZ5) ) ( [Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf) )
 - SHT31 Test Temperature & Humidity Sensor ( [buy on AliExpress](https://s.click.aliexpress.com/e/_DEaWTZ5) ) ( [Datasheet](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf) )
-
-#### Connect to an API
-- [GitHub API - Test file upload](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/github_api_test_upload)
-- [APRS CWOP Test](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/aprs_cwop_test)
-
 
 <br>
 
