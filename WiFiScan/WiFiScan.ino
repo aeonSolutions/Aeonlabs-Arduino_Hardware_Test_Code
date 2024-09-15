@@ -4,8 +4,9 @@
  *  E.g. the return value of `encryptionType()` different because more modern encryption is supported.
  */
 #include "WiFi.h"
-const char* ssid     = "TheScientist"; // Change this to your WiFi SSID
-const char* password = "migalhas"; // Change this to your WiFi password
+// WiFi credentials
+const char* ssid = "NOS_Internet_50AD";
+const char* password = "60726873";
 long timer=0;
 
 wifi_power_t wifiPWR[11];
