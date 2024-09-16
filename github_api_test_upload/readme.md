@@ -14,7 +14,7 @@
 <p align="right">
    <img height="25" src="https://github.com/aeonSolutions/aeonSolutions/blob/main/media/language-icon.png"> 
  <a href="https://github-com.translate.goog/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code?_x_tr_sl=en&_x_tr_tl=nl&_x_tr_hl=en&_x_tr_pto=wapp">Change Language</a> <br>
-Last update: 26-08-2024 <br>
+Last update: 16-09-2024 <br>
 <sub> <a href="https://www.rapidtables.com/convert/number/hex-to-binary.html?x=64">HEX to Bin Conveter</a> </sub>
 </p>
 
