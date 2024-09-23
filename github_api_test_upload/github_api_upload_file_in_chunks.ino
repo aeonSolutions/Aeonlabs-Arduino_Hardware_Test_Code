@@ -94,7 +94,7 @@ const char* ssid = " ";
 const char* password = " ";
 
 // GitHub credentials
-const char* githubToken = " "; // Replace with your GitHub token
+const char* githubToken = "  "; // Replace with your GitHub token
 const char* githubUser = "aeonSolutions";              // Replace with your GitHub username
 const char* githubRepo = "AeonLabs-Safety-Health";                  // Replace with your GitHub repository
 const char* githubBranch = "main";  
@@ -510,16 +510,14 @@ void getLatestTreeSHA() {
 // ------------------------------------------------------------------------------------------------------
 void uploadFileInChunks() {
   NetworkClient client;
-
   if (client.connect(githubHost, 443)) {
     String url = "/repos/" + String(githubUser) + "/" + String(githubRepo) + "/git/blobs";
     String encodedChunk;
     String blobSHA;
     String fileBlobs = "";
     
-    String boundary = "7MA4YWxkTrZu0gW";
-    // request tail
-    String tail = "\r\n--" + boundary + "--\r\n\r\n";
+   String json_part_1 = "{ \"content\": \"";
+   String json_part_2 = "\", \"encoding\": \"base64\" }";
 
     const size_t chunkSize = 132;  // Adjust based on available memory
     uint8_t buffer[chunkSize];
@@ -531,7 +529,7 @@ void uploadFileInChunks() {
         return ;
     }
     unsigned long fileSize = fileToSend.size(); 
-    unsigned long content_len =  2 + encode_base64_length(fileSize);
+    unsigned long content_len = encode_base64_length(fileSize);
 
     log_i("File Content size = " + String( fileSize ) );
     log_i("Base 64 Content length = " + String( content_len ) );
@@ -543,10 +541,12 @@ void uploadFileInChunks() {
     client.println("Authorization: Bearer " + String(githubToken));
     client.println("User-Agent: ESP32");
     client.println("Content-Type: application/json");
+    client.println("Connection: close");
     client.print("Content-Length: ");
-    client.println(content_len);  // Calculate content length
-    client.println();
-    client.print("{ \"content\": \"");
+    client.println(content_len + json_part_1.length() +  json_part_2.length() );  // Calculate content length
+    client.print("\r\n");
+    client.print("\r\n");
+    client.print(json_part_1);
 
     long int temp = 0;
     while (fileToSend.available()) {
@@ -558,15 +558,16 @@ void uploadFileInChunks() {
     fileToSend.close();
     log_i("Content len sent: " + String(temp) );
 
-    client.println("\", \"encoding\": \"base64\" }");
-    client.println();
+    client.println(json_part_2);
+    client.print("\r\n");
+
     while (client.connected()) {
       String response = client.readStringUntil('\n');
       log_i ("client response : " + response );
       if (response.startsWith("\"sha\"")) {
         String blobSHA = extractSHA(response);
         log_i("Blob SHA: " + blobSHA);
-        //break;
+        break;
       }
     }
     client.stop();
@@ -666,7 +667,7 @@ void updateReference(String newCommitSHA) {
     http.begin(url);
     http.addHeader("Authorization", "Bearer " + String(githubToken));
     http.addHeader("Content-Type", "application/json");
-    http.addHeader("User-Agent", "Arduino");
+    http.addHeader("User-Agent", "AeonSolutions");
 
     // Update ref payload
     String payload = "{ \"sha\": \"" + newCommitSHA + "\", \"force\": true }";
@@ -684,7 +685,7 @@ void updateReference(String newCommitSHA) {
     http.end();
   }
 }
-
+             
 // -----------------------------------------------------------------------------
 // Function to parse the JSON response and extract the 'sha' field
 String extractSHA(String response) {
