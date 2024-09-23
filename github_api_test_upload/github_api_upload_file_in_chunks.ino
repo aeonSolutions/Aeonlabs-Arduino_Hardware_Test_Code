@@ -84,17 +84,18 @@ const byte daysavetime = 1;
 
 #include <WiFi.h>          // For ESP32 (or use <ESP8266WiFi.h> for ESP8266)
 #include <NetworkClient.h>
+#include <WiFiClientSecure.h>    // Secure client for HTTPS
 #include <HTTPClient.h>
 #include <SD.h>            // SD card library (optional, if reading from SD card)
 #include <SPI.h>
 #include <Base64.h>        // Base64 library (optional, for encoding chunks if necessary)
 
 // Replace with your credentials
-const char* ssid = " ";
+const char* ssid = "  ";
 const char* password = " ";
 
 // GitHub credentials
-const char* githubToken = " "; // Replace with your GitHub token
+const char* githubToken = "  "; // Replace with your GitHub token
 const char* githubUser = "aeonSolutions";              // Replace with your GitHub username
 const char* githubRepo = "AeonLabs-Safety-Health";                  // Replace with your GitHub repository
 const char* githubBranch = "main";  
@@ -495,9 +496,11 @@ void getLatestTreeSHA() {
       log_i("Latest tree response: " + response);
 
       String latestTreeSHA = extractSHA(response);
-      
       log_i("Latest Tree SHA blob: " + latestTreeSHA);
-
+      if (latestTreeSHA.length() <40 ){
+        log_i("Incorrect Blob size (<40)");
+        return;
+      }
       // Start uploading the file
       uploadFileInChunks();
     } else {
@@ -509,78 +512,84 @@ void getLatestTreeSHA() {
 
 // ------------------------------------------------------------------------------------------------------
 void uploadFileInChunks() {
-  NetworkClient client;
-  if (client.connect(githubHost, 443)) {
-    String url = "/repos/" + String(githubUser) + "/" + String(githubRepo) + "/git/blobs";
-    String encodedChunk;
-    String fileBlobs = "";
-    
-   String json_part_1 = "{ \"content\": \"";
-   String json_part_2 = "\", \"encoding\": \"base64\" }";
-
-    const size_t chunkSize = 132;  // Adjust based on available memory
-    uint8_t buffer[chunkSize];
-
-    File fileToSend = SPIFFS.open(filePath, "r");
-    if (!fileToSend) {
-        log_i("Failed to open file for reading");
-        BlinkLED(LED_GREEN, 5);
-        return ;
-    }
-    unsigned long fileSize = fileToSend.size(); 
-    unsigned long content_len = encode_base64_length(fileSize);
-
-    log_i("File Content size = " + String( fileSize ) );
-    log_i("Base 64 Content length = " + String( content_len ) );
-    log_i("ratio = " + String( (float)( (float)content_len/fileSize), 2 ) );
-
-    // Send HTTP POST request to create blob
-    client.println("POST " + url + " HTTP/1.1");
-    client.println("Host: " + String(githubHost) );
-    client.println("Authorization: Bearer " + String(githubToken));
-    client.println("User-Agent: AeonSolutions");
-    client.println("Content-Type: application/json");
-    client.println("Connection: close");
-    client.print("Content-Length: ");
-    client.println(content_len + json_part_1.length() +  json_part_2.length() );  // Calculate content length
-    client.print("\r\n");
-    client.print("\r\n");
-    client.print(json_part_1);
-
-    long int temp = 0;
-    while (fileToSend.available()) {
-      size_t bytesRead = fileToSend.read(buffer, chunkSize);
-      encodedChunk = base64::encode(buffer, bytesRead);
-      client.print( encodedChunk);
-      temp += encodedChunk.length();
-    }
-    fileToSend.close();
-    log_i("Content len sent: " + String(temp) );
-
-    client.println(json_part_2);
-    client.print("\r\n");
-
-    while (client.connected()) {
-      String line = client.readStringUntil('\n');
-      if (line == "\r") {
-        break;
-      }
-    }
-
-    // Read the response body
-    String responseBody = client.readString();
-    log_i("Response Body:" + responseBody);
-
-    String blobSHA = extractSHA(responseBody);
-    log_i("Blob SHA: " + blobSHA);
-    
-    client.stop();
-
-    // Create the tree with the blob SHA
-    createTree(blobSHA);
-  } else{
+  WiFiClientSecure client;
+  
+  client.setInsecure();  // Use this only for testing; skips certificate verification
+  if (client.connect(githubHost, 443) == false ) {
     log_i ("failed to connect to " + String(githubHost) );
   }
+
+  String url = "/repos/" + String(githubUser) + "/" + String(githubRepo) + "/git/blobs";
+  String encodedChunk;
+  String fileBlobs = "";
+  
+  String json_part_1 = "{ \"content\": \"";
+  String json_part_2 = "\", \"encoding\": \"base64\" }";
+
+  const size_t chunkSize = 132;  // Adjust based on available memory
+  uint8_t buffer[chunkSize];
+
+  File fileToSend = SPIFFS.open(filePath, "r");
+  if (!fileToSend) {
+      log_i("Failed to open file for reading");
+      BlinkLED(LED_GREEN, 5);
+      return ;
+  }
+  unsigned long fileSize = fileToSend.size(); 
+  unsigned long content_len = encode_base64_length(fileSize);
+
+  log_i("File Content size = " + String( fileSize ) );
+  log_i("Base 64 Content length = " + String( content_len ) );
+  log_i("ratio = " + String( (float)( (float)content_len/fileSize), 2 ) );
+
+  // Send HTTP POST request to create blob
+  client.println("POST " + url + " HTTP/1.1");
+  client.println("Host: " + String(githubHost) );
+  client.println("Authorization: Bearer " + String(githubToken));
+  client.println("User-Agent: AeonSolutions");
+  client.println("Content-Type: application/json");
+  client.println("Connection: close");
+  client.print("Content-Length: ");
+  client.println(content_len + json_part_1.length() +  json_part_2.length() );  // Calculate content length
+  client.print("\r\n");
+  client.print("\r\n");
+  client.print(json_part_1);
+
+  long int temp = 0;
+  while (fileToSend.available()) {
+    size_t bytesRead = fileToSend.read(buffer, chunkSize);
+    encodedChunk = base64::encode(buffer, bytesRead);
+    client.print( encodedChunk);
+    temp += encodedChunk.length();
+  }
+  fileToSend.close();
+  log_i("Content len sent: " + String(temp) );
+
+  client.println(json_part_2);
+  client.print("\r\n");
+
+  while (client.connected()) {
+    String line = client.readStringUntil('\n');
+    if (line == "\r") {
+      break;
+    }
+  }
+
+  // Read the response body
+  String responseBody = client.readString();
+  client.stop();
+
+  log_i("Response Body:" + responseBody);
+
+  String blobSHA = extractSHA(responseBody);
+  log_i("Blob SHA: " + blobSHA);
+  if (blobSHA.length() <40 ){
+    log_i("Incorrect Blob size (<40)");
+    return;
+  }
+
+  // Create the tree with the blob SHA
+  createTree(blobSHA);
 }
 
 // ----------------------------------------------------------------------------------
