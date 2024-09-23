@@ -94,7 +94,7 @@ const char* ssid = " ";
 const char* password = " ";
 
 // GitHub credentials
-const char* githubToken = "  "; // Replace with your GitHub token
+const char* githubToken = " "; // Replace with your GitHub token
 const char* githubUser = "aeonSolutions";              // Replace with your GitHub username
 const char* githubRepo = "AeonLabs-Safety-Health";                  // Replace with your GitHub repository
 const char* githubBranch = "main";  
@@ -457,7 +457,7 @@ void getLatestCommitSHA() {
 
     http.begin(url);
     http.addHeader("Authorization", "Bearer " + String(githubToken));
-    http.addHeader("User-Agent", "Arduino");
+    http.addHeader("User-Agent", "AeonSolutions");
 
     int httpResponseCode = http.GET();
     if (httpResponseCode > 0) {
@@ -487,7 +487,7 @@ void getLatestTreeSHA() {
 
     http.begin(url);
     http.addHeader("Authorization", "Bearer " + String(githubToken));
-    http.addHeader("User-Agent", "Arduino");
+    http.addHeader("User-Agent", "AeonSolutions");
 
     int httpResponseCode = http.GET();
     if (httpResponseCode > 0) {
@@ -513,7 +513,6 @@ void uploadFileInChunks() {
   if (client.connect(githubHost, 443)) {
     String url = "/repos/" + String(githubUser) + "/" + String(githubRepo) + "/git/blobs";
     String encodedChunk;
-    String blobSHA;
     String fileBlobs = "";
     
    String json_part_1 = "{ \"content\": \"";
@@ -539,7 +538,7 @@ void uploadFileInChunks() {
     client.println("POST " + url + " HTTP/1.1");
     client.println("Host: " + String(githubHost) );
     client.println("Authorization: Bearer " + String(githubToken));
-    client.println("User-Agent: ESP32");
+    client.println("User-Agent: AeonSolutions");
     client.println("Content-Type: application/json");
     client.println("Connection: close");
     client.print("Content-Length: ");
@@ -562,14 +561,19 @@ void uploadFileInChunks() {
     client.print("\r\n");
 
     while (client.connected()) {
-      String response = client.readStringUntil('\n');
-      log_i ("client response : " + response );
-      if (response.startsWith("\"sha\"")) {
-        String blobSHA = extractSHA(response);
-        log_i("Blob SHA: " + blobSHA);
+      String line = client.readStringUntil('\n');
+      if (line == "\r") {
         break;
       }
     }
+
+    // Read the response body
+    String responseBody = client.readString();
+    log_i("Response Body:" + responseBody);
+
+    String blobSHA = extractSHA(responseBody);
+    log_i("Blob SHA: " + blobSHA);
+    
     client.stop();
 
     // Create the tree with the blob SHA
@@ -588,7 +592,7 @@ void createTree(String blobSHA) {
     http.begin(url);
     http.addHeader("Authorization", "Bearer " + String(githubToken));
     http.addHeader("Content-Type", "application/json");
-    http.addHeader("User-Agent", "Arduino");
+    http.addHeader("User-Agent", "AeonSolutions");
 
     // Create tree payload with the blob SHA  : not the  latestTreeSHA
     String payload = "{"
@@ -627,7 +631,7 @@ void createCommit(String newTreeSHA) {
     http.begin(url);
     http.addHeader("Authorization", "Bearer " + String(githubToken));
     http.addHeader("Content-Type", "application/json");
-    http.addHeader("User-Agent", "Arduino");
+    http.addHeader("User-Agent", "AeonSolutions");
 
     // Create commit payload
     String commitMessage = "Upload file to GitHub from Arduino";
