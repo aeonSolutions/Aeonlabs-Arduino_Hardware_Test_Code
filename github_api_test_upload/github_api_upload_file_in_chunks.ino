@@ -355,7 +355,7 @@ void loop() {
     // get the SHA of the base tree for the file
     String oldFileSHA = getFileSHA();
    // PUSH the new updated file 
-    String newfileSHA - uploadFileInChunks();
+    String newfileSHA = uploadFileInChunks();
     // create a new tree
     String newTreeSHA = createTree(newfileSHA);
     // get parent 
