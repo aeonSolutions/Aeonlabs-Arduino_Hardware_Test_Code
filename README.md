@@ -22,8 +22,8 @@ Last update: 23-09-2024 <br>
 Arduino .ino code to test more than 30 components and functionalities of the hardware electronics I prototype (design, fabricate, and test).  Make sure to also view my [Main Open Hardware Electronics repository](https://github.com/aeonSolutions/PCB-Prototyping-Catalogue/blob/main/README.md).
 
 #### Connect to an API
-- [GitHub API - Test file upload](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/github_api_test_upload)
-- [Dataverse API - Test file upload](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/dataverse_api_test_upload)
+- [GitHub API - Test file upload](https://github.com/aeonSolutions/AeonLabs-GitHub-API-C-library)
+- [Dataverse API - Test file upload](https://github.com/aeonSolutions/OpenScience-Dataverse-API-C-library)
 - [Zenodo API - Test file upload](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/zenodo_api_test_code)
 - [APRS API -  CWOP Test](https://github.com/aeonSolutions/Aeonlabs-Arduino_Hardware_Test_Code/tree/main/aprs_cwop_test)
 
