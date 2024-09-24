@@ -91,7 +91,7 @@ const byte daysavetime = 1;
 #include <Base64.h>        // Base64 library (optional, for encoding chunks if necessary)
 
 // Replace with your credentials
-const char* ssid = "   ";
+const char* ssid = "  ";
 const char* password = "  ";
 
 // GitHub credentials
@@ -359,7 +359,7 @@ void loop() {
     // create a new tree
     String newTreeSHA = createTree(newfileSHA);
     // get parent 
-    String paretSHA = getParents();
+    String parentSHA = getParents();
     // Commit the tree
     String commitSHA = createCommit(newTreeSHA, parentSHA);
     // Update the reference (branch) to point to the new commit
@@ -402,7 +402,7 @@ String getFileSHA() {
     String FileSHA = extractSHA(responseBody);
     if (FileSHA.length() <40 ){
       log_I("Incorrect Blob size (<40)");
-      return;
+      return "-6";
     }
     return FileSHA;
   } else {
@@ -578,7 +578,7 @@ String getParents() {
 }
 
 //-------------------------------------------------------------------------------------------
-void createCommit(String newTreeSHA, String parentSHA) {
+String createCommit(String newTreeSHA, String parentSHA) {
   if (WiFi.status() != WL_CONNECTED) {
     log_I("WIFI not available. skipping upload.");
     return "-2";
